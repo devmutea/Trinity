@@ -1,0 +1,22 @@
+{
+  "name": "Trinity Express",
+  "short_name": "TrinityExpress",
+  "description": "Reliable cross-border and regional bus ticket booking across East Africa.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#132f4c",
+  "theme_color": "#132f4c",
+  "icons": [
+    {
+      "src": "/site/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/site/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

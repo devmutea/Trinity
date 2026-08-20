@@ -1,0 +1,14 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_SUPABASE_URL: ${VITE_SUPABASE_URL:-https://example.supabase.co}
+        VITE_SUPABASE_ANON_KEY: ${VITE_SUPABASE_ANON_KEY:-public-anon-key}
+        VITE_ADSENSE_PUBLISHER_ID: ${VITE_ADSENSE_PUBLISHER_ID}
+    ports:
+      - "8080:80"
+    environment:
+      VITE_ADSENSE_PUBLISHER_ID: ${VITE_ADSENSE_PUBLISHER_ID}
+    restart: unless-stopped
